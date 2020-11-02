@@ -23,7 +23,7 @@ async def play(ctx, arg):
         opt.index(arg)
     except:
         await ctx.send('Try again bruh')
-    bmove = random.randrange(2)
+    bmove = random.randrange(3)
     pmove = opt.index(arg) 
     bot_move = opt[bmove]
     await ctx.send(f'Player: {arg} vs Bot: {bot_move}\nResult: {determine_winner(pmove, bmove)}')
